@@ -4,7 +4,7 @@ export type AvatarProps = { fallback?: string };
 
 export const Avatar = (props: PropsWithChildren) => {
   return (
-    <div className="border-border flex size-10 items-center justify-center overflow-hidden rounded-full">
+    <div className="border-border flex size-10 items-center justify-center overflow-hidden rounded-full hover:cursor-pointer">
       {props.children}
     </div>
   );

@@ -9,7 +9,7 @@ export const DashboardLink = ({
     <a
       {...props}
       className={
-        "hover:text-foreground text-sm transition " +
+        "hover:text-foreground hidden text-sm transition [@media(min-width:810px)]:block" +
         " " +
         className +
         " " +

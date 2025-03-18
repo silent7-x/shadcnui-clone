@@ -5,8 +5,8 @@ import { Select } from "./Select";
 
 export const DashboardHeader = () => {
   return (
-    <header className="border-border border-b py-4">
-      <div className="flex items-center gap-4 px-4">
+    <header className="border-border border-b px-4 py-4">
+      <div className="flex items-center gap-4">
         <Select>
           <div className="flex items-center gap-4">
             <div className="size-5 rounded-full bg-gradient-to-r from-zinc-800 to-zinc-200"></div>
