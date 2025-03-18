@@ -9,7 +9,7 @@ export const DashboardHeader = () => {
       <div className="flex items-center gap-4 px-4">
         <Select>
           <div className="flex items-center gap-4">
-            <div className="size-4 rounded-full bg-gradient-to-r from-zinc-800 to-zinc-200"></div>
+            <div className="size-5 rounded-full bg-gradient-to-r from-zinc-800 to-zinc-200"></div>
             <p>Alicia Roch</p>
           </div>
         </Select>
