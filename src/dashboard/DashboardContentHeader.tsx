@@ -14,7 +14,10 @@ export const DashboardContentHeader = () => {
             <span className="text-sm">Mar 18, 2025 - Apr 2, 2025</span>
           </div>
         </Select>
-        <Button> Download </Button>
+        <Button size="sm" variant="ghost2">
+          {" "}
+          Download{" "}
+        </Button>
       </div>
       <Tabs>
         <Tab isActive>Overview</Tab>
