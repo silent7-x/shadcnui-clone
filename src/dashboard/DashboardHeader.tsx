@@ -25,6 +25,7 @@ export const DashboardHeader = () => {
             <AvatarImage
               src="https://api.dicebear.com/9.x/lorelei/svg"
               alt="Avatar"
+              className=""
             />
           </Avatar>
         </div>

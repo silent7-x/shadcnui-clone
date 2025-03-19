@@ -1,16 +1,13 @@
 import { Avatar, AvatarImage } from "./Avatar";
 
-export const SalesLine = ({
-  src,
-  name,
-  email,
-  amount,
-}: {
+export type SalesLineProps = {
   src: string;
   name: string;
   email: string;
   amount: number;
-}) => {
+};
+
+export const SalesLine = ({ src, name, email, amount }: SalesLineProps) => {
   return (
     <div className="gap flex flex-row items-center justify-between">
       <div className="flex flex-row items-center gap-2">

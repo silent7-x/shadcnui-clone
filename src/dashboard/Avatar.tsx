@@ -1,31 +1,49 @@
 import { PropsWithChildren, useState } from "react";
+import { cn } from "../cn";
 
-export type AvatarProps = { fallback?: string };
+export type AvatarProps = PropsWithChildren & { className?: string };
 
-export const Avatar = (props: PropsWithChildren) => {
+export const Avatar = ({
+  className,
+  children,
+}: PropsWithChildren & { className?: string }) => {
   return (
-    <div className="border-border flex size-10 items-center justify-center overflow-hidden rounded-full hover:cursor-pointer">
-      {props.children}
+    <div
+      className={cn(
+        "border-border flex size-10 items-center justify-center overflow-hidden rounded-full hover:cursor-pointer",
+        className,
+      )}
+    >
+      {children}
     </div>
   );
 };
 
-export const AvatarFallback = (props: { children: string }) => {
-  return <span>{props.children?.[0] ?? "?"}</span>;
+export const AvatarFallback = ({ alt }: { alt: string }) => {
+  return <span>{alt?.[0] ?? "?"}</span>;
 };
 
-export const AvatarImage = (props: { src?: string; alt: string }) => {
+type AvatarImageProps = {
+  src?: string;
+  alt: string;
+  className?: string;
+};
+
+export const AvatarImage = ({ src, alt, className }: AvatarImageProps) => {
   const [error, setError] = useState(false);
 
-  if (!props.src || error) {
-    return <AvatarFallback>{props.alt}</AvatarFallback>;
+  if (!src || error) {
+    return <AvatarFallback alt={alt} />;
   }
 
   return (
     <img
-      src={props.src}
-      alt={props.alt}
-      className="size-full bg-black object-contain dark:bg-white"
+      src={src}
+      alt={alt}
+      className={cn(
+        "size-full bg-black object-contain dark:bg-white",
+        className,
+      )}
       onError={() => setError(true)}
     />
   );

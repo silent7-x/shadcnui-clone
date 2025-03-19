@@ -1,25 +1,27 @@
 import { PropsWithChildren } from "react";
+import { cn } from "../cn";
 
-export const Tabs = (props: PropsWithChildren) => {
+export type TabsProps = PropsWithChildren;
+
+export const Tabs = ({ children }: TabsProps) => {
   return (
     <div className="bg-muted ml-4 w-fit rounded-md px-1 py-1 text-sm">
-      {props.children}
+      {children}
     </div>
   );
 };
 
-export const Tab = (props: PropsWithChildren & { isActive?: boolean }) => {
+export type TabProps = PropsWithChildren & { isActive?: boolean };
+
+export const Tab = ({ children, isActive }: TabProps) => {
   return (
     <button
-      className={
-        "rounded-md px-2.5 py-1 hover:cursor-pointer" +
-        " " +
-        (props.isActive
-          ? "bg-background text-foreground"
-          : "text-muted-foreground/60")
-      }
+      className={cn(
+        "rounded-md px-2.5 py-1 hover:cursor-pointer",
+        isActive ? "bg-background text-foreground" : "text-muted-foreground/60",
+      )}
     >
-      {props.children}
+      {children}
     </button>
   );
 };

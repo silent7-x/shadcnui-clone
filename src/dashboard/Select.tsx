@@ -1,8 +1,17 @@
 import { PropsWithChildren } from "react";
+import { cn } from "../cn";
 
-export const Select = ({ children }: PropsWithChildren) => {
+export const Select = ({
+  children,
+  className,
+}: PropsWithChildren & { className?: string }) => {
   return (
-    <div className="border-border hover hover:bg-muted rounded-md border px-4 py-2 transition hover:cursor-pointer">
+    <div
+      className={cn(
+        "border-border hover hover:bg-muted rounded-md border px-4 py-2 transition hover:cursor-pointer",
+        className,
+      )}
+    >
       {children}
     </div>
   );
