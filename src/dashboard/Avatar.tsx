@@ -25,7 +25,7 @@ export const AvatarImage = (props: { src?: string; alt: string }) => {
     <img
       src={props.src}
       alt={props.alt}
-      className="size-full object-contain"
+      className="size-full bg-black object-contain dark:bg-white"
       onError={() => setError(true)}
     />
   );
