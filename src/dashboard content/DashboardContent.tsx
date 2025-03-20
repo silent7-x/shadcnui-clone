@@ -1,15 +1,20 @@
 import { Activity, CreditCard, DollarSign, User } from "lucide-react";
-import { SalesLineData } from "./SalesLineData";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/Card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
 import { SalesLine } from "./SalesLine";
+import { SalesLineData } from "./SalesLineData";
 
 export const DashboardContent = () => {
   return (
     <div className="m-auto mt-4 flex flex-col gap-4 px-8">
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
-          <CardHeader>
-            <CardTitle>Total Revenue</CardTitle>
+          <CardHeader className="flex items-center justify-between">
+            <CardTitle className="text-sm font-light">Total Revenue</CardTitle>
             <DollarSign size={16} className="text-muted-foreground" />
           </CardHeader>
 
@@ -22,8 +27,8 @@ export const DashboardContent = () => {
         </Card>
 
         <Card>
-          <CardHeader>
-            <CardTitle>Subscriptions</CardTitle>
+          <CardHeader className="flex items-center justify-between">
+            <CardTitle className="text-sm font-light">Subscriptions</CardTitle>
             <User size={16} className="text-muted-foreground" />
           </CardHeader>
 
@@ -36,8 +41,8 @@ export const DashboardContent = () => {
         </Card>
 
         <Card>
-          <CardHeader>
-            <CardTitle>Sales</CardTitle>
+          <CardHeader className="flex items-center justify-between">
+            <CardTitle className="text-sm font-light">Sales</CardTitle>
             <CreditCard size={16} className="text-muted-foreground" />
           </CardHeader>
 
@@ -50,8 +55,8 @@ export const DashboardContent = () => {
         </Card>
 
         <Card>
-          <CardHeader>
-            <CardTitle>Active Now</CardTitle>
+          <CardHeader className="flex items-center justify-between">
+            <CardTitle className="text-sm font-light">Active Now</CardTitle>
             <Activity size={16} className="text-muted-foreground" />
           </CardHeader>
 

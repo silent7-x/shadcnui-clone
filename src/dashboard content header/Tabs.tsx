@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { cn } from "../cn";
+import { cn } from "../lib/utils";
 
 export type TabsProps = PropsWithChildren;
 
