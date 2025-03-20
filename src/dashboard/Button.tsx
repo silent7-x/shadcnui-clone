@@ -1,31 +1,47 @@
-import { PropsWithChildren } from "react";
+import { cva, VariantProps } from "class-variance-authority";
+import { ComponentPropsWithoutRef } from "react";
 import { cn } from "../cn";
 
+type ButtonVariantsType = VariantProps<typeof buttonVariants>;
+
+const buttonVariants = cva(
+  "focus-visible:ring-ring  items-center justify-center rounded-md text-sm font-medium whitespace-nowrap shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        outline:
+          "border-border text-foreground bg-background border hover:bg-accent",
+        ghost: "text-foreground bg-background hover:bg-accent",
+      },
+      // Définir le nom de chaque variation
+      size: {
+        // Définit les différentes possibilités
+        default: "px-4 py-2 h-9",
+        sm: "h-8 px-3",
+        lg: "h-10 px-6",
+      },
+    },
+    // Définit les valeurs par défaut pour chaque variante
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  },
+);
+
 export const Button = ({
-  children,
   className,
-  size,
   variant,
-}: PropsWithChildren & {
-  className?: string;
-  size?: string;
-  variant?: string;
-}) => {
+  size,
+  ...props
+}: ComponentPropsWithoutRef<"button"> & ButtonVariantsType) => {
   return (
     <button
-      className={cn(
-        "focus-visible:ring-ring bg-primary text-primary-foreground hover:bg-primary/90 inline-flex h-9 items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium whitespace-nowrap shadow transition-colors focus-visible:ring-1 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
-        className,
-        variant === "outline" && "bg-foreground text-primary-foreground",
-        variant === "ghost" &&
-          "border-border text-muted-foreground bg-background border",
-        variant === "ghost2" && "text-foreground bg-background",
-        size === "default" && "h-10 px-4 py-2",
-        size === "sm" && "h-9 rounded-md px-3",
-        size === "lg" && "h-11 rounded-md px-8",
-      )}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
     >
-      {children}
+      {props.children}
     </button>
   );
 };

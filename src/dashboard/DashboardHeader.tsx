@@ -20,12 +20,11 @@ export const DashboardHeader = () => {
         <DashboardLink href="#">Products</DashboardLink>
         <DashboardLink href="#">Settings</DashboardLink>
         <div className="ml-auto flex items-center gap-2">
-          <Input placeholder="Search..." />
+          <Input placeholder="Search..." name="search" />
           <Avatar>
             <AvatarImage
               src="https://api.dicebear.com/9.x/lorelei/svg"
               alt="Avatar"
-              className=""
             />
           </Avatar>
         </div>
