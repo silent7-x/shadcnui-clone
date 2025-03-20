@@ -1,4 +1,4 @@
-import { Avatar, AvatarImage } from "./Avatar";
+import { Avatar, AvatarImage } from "../components/Avatar";
 
 export type SalesLineProps = {
   src: string;

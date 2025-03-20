@@ -1,6 +1,6 @@
-import { DashboardContent } from "./dashboard/DashboardContent";
-import { DashboardContentHeader } from "./dashboard/DashboardContentHeader";
-import { DashboardHeader } from "./dashboard/DashboardHeader";
+import { DashboardContentHeader } from "./dashboard content header/DashboardContentHeader";
+import { DashboardContent } from "./dashboard content/DashboardContent";
+import { DashboardHeader } from "./dashboard header/DashboardHeader";
 
 function App() {
   return (

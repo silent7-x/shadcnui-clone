@@ -1,7 +1,7 @@
-import { Avatar, AvatarImage } from "./Avatar";
+import { Avatar, AvatarImage } from "../components/Avatar";
+import { Input } from "../components/Input";
+import { Select } from "../components/Select";
 import { DashboardLink } from "./DashboardLink";
-import { Input } from "./Input";
-import { Select } from "./Select";
 
 export const DashboardHeader = () => {
   return (

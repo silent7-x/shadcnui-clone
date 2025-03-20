@@ -1,6 +1,6 @@
 import { Calendar } from "lucide-react";
-import { Button } from "./Button";
-import { Select } from "./Select";
+import { Select } from "../components/Select";
+import { Button } from "../components/Button";
 import { Tab, Tabs } from "./Tabs";
 
 export const DashboardContentHeader = () => {

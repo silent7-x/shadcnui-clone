@@ -1,7 +1,7 @@
 import { Activity, CreditCard, DollarSign, User } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "./Card";
-import { SalesLine } from "./SalesLine";
 import { SalesLineData } from "./SalesLineData";
+import { Card, CardContent, CardHeader, CardTitle } from "../components/Card";
+import { SalesLine } from "./SalesLine";
 
 export const DashboardContent = () => {
   return (
