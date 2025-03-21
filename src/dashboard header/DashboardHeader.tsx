@@ -1,20 +1,26 @@
 import { ModeToggle } from "@/components/mode-toggle";
+import { useState } from "react";
 import { Input } from "../components/Input";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
-import { DashboardLink } from "./DashboardLink";
+import { DashboardLinks, DashboardLinksDropdown } from "./DashboardLinks";
 import { SelectEmployee } from "./SelectEmployee";
 
 export const DashboardHeader = () => {
+  const [active, setActive] = useState("overview");
   return (
     <header className="border-border border-b px-4 py-4">
       <div className="flex items-center gap-4">
         <SelectEmployee />
-        <DashboardLink href="#" className="text-foreground" isCurrent>
-          Overview
-        </DashboardLink>
-        <DashboardLink href="#">Customers</DashboardLink>
-        <DashboardLink href="#">Products</DashboardLink>
-        <DashboardLink href="#">Settings</DashboardLink>
+        <DashboardLinksDropdown
+          className="block md:hidden"
+          active={active}
+          setActive={setActive}
+        />
+        <DashboardLinks
+          className="hidden md:block"
+          active={active}
+          setActive={setActive}
+        />
         <div className="ml-auto flex items-center gap-4">
           <Input
             placeholder="Search..."
