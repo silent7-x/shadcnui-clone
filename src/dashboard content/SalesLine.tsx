@@ -1,4 +1,4 @@
-import { Avatar, AvatarImage } from "../components/Avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 
 export type SalesLineProps = {
   src: string;
@@ -13,6 +13,7 @@ export const SalesLine = ({ src, name, email, amount }: SalesLineProps) => {
       <div className="flex flex-row items-center gap-2">
         <Avatar>
           <AvatarImage src={src} alt={name + "avatar"} />
+          <AvatarFallback>{name[0]}</AvatarFallback>
         </Avatar>
         <div className="flex flex-col space-y-1">
           <p className="text-sm font-light">{name}</p>
