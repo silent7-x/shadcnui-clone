@@ -10,8 +10,8 @@ export type SalesLineProps = {
 export const SalesLine = ({ src, name, email, amount }: SalesLineProps) => {
   return (
     <div className="gap flex flex-row items-center justify-between">
-      <div className="flex flex-row items-center gap-2">
-        <Avatar>
+      <div className="flex flex-row items-center gap-4">
+        <Avatar className="bg-foreground size-10 hover:cursor-pointer">
           <AvatarImage src={src} alt={name + "avatar"} />
           <AvatarFallback>{name[0]}</AvatarFallback>
         </Avatar>

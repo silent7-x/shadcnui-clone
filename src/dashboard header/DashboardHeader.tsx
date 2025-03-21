@@ -1,3 +1,4 @@
+import { ModeToggle } from "@/components/mode-toggle";
 import { Input } from "../components/Input";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
 import { DashboardLink } from "./DashboardLink";
@@ -18,15 +19,16 @@ export const DashboardHeader = () => {
           <Input
             placeholder="Search..."
             name="search"
-            className="w-full flex-1"
+            className="h-9 w-full flex-1"
           />
-          <Avatar className="size-10 hover:cursor-pointer">
+          <Avatar className="bg-foreground size-10 hover:cursor-pointer">
             <AvatarImage
               src="https://api.dicebear.com/9.x/lorelei/svg"
               alt="Avatar"
             />
             <AvatarFallback>A</AvatarFallback>
           </Avatar>
+          <ModeToggle />
         </div>
       </div>
     </header>

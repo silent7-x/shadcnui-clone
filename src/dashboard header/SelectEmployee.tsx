@@ -11,7 +11,7 @@ import {
 export const SelectEmployee = () => {
   return (
     <Select defaultValue="Alicia Roch">
-      <SelectTrigger className="dark:hover:bg-accent">
+      <SelectTrigger className="dark:hover:bg-accent hover:bg-accent">
         <SelectValue placeholder="Employees" />
       </SelectTrigger>
       <SelectContent>
