@@ -1,7 +1,7 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { useState } from "react";
-import { Input } from "../components/Input";
 import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
+import { Input } from "../components/ui/input";
 import { DashboardLinks, DashboardLinksDropdown } from "./DashboardLinks";
 import { SelectEmployee } from "./SelectEmployee";
 
@@ -22,11 +22,7 @@ export const DashboardHeader = () => {
           setActive={setActive}
         />
         <div className="ml-auto flex items-center gap-4">
-          <Input
-            placeholder="Search..."
-            name="search"
-            className="h-9 w-full flex-1"
-          />
+          <Input placeholder="Search..." name="search" />
           <Avatar className="bg-foreground size-10 hover:cursor-pointer">
             <AvatarImage
               src="https://api.dicebear.com/9.x/lorelei/svg"
