@@ -1,5 +1,5 @@
+import { cn } from "@/lib/utils";
 import { ComponentPropsWithoutRef } from "react";
-import { cn } from "../lib/utils";
 
 export type DashboardLinkProps = ComponentPropsWithoutRef<"a"> & {
   isCurrent?: boolean;
@@ -14,7 +14,7 @@ export const DashboardLink = ({
     <a
       {...props}
       className={cn(
-        "hover:text-foreground hidden text-sm transition [@media(min-width:810px)]:block",
+        "hover:text-foreground hidden text-sm transition [@media(min-width:768px)]:block",
         className,
         isCurrent ? "text-foreground" : "text-muted-foreground",
       )}

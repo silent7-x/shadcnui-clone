@@ -1,5 +1,5 @@
 import { PropsWithChildren, useState } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "@/lib/utils";
 
 export type AvatarProps = PropsWithChildren & { className?: string };
 

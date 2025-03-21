@@ -7,7 +7,7 @@ export const DashboardHeader = () => {
   return (
     <header className="border-border border-b px-4 py-4">
       <div className="flex items-center gap-4">
-        <Select>
+        <Select className="shrink-0">
           <div className="flex items-center gap-4">
             <div className="size-5 rounded-full bg-gradient-to-r from-zinc-800 to-zinc-200"></div>
             <p>Alicia Roch</p>
@@ -19,8 +19,12 @@ export const DashboardHeader = () => {
         <DashboardLink href="#">Customers</DashboardLink>
         <DashboardLink href="#">Products</DashboardLink>
         <DashboardLink href="#">Settings</DashboardLink>
-        <div className="ml-auto flex items-center gap-2">
-          <Input placeholder="Search..." name="search" />
+        <div className="ml-auto flex items-center gap-4">
+          <Input
+            placeholder="Search..."
+            name="search"
+            className="w-full flex-1"
+          />
           <Avatar>
             <AvatarImage
               src="https://api.dicebear.com/9.x/lorelei/svg"
