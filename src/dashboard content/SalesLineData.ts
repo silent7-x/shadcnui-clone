@@ -1,4 +1,4 @@
-export const SalesLineData = [
+export const salesLineData = [
   {
     src: "https://api.dicebear.com/9.x/lorelei/svg?seed=Christian",
     name: "Olivia Martin",

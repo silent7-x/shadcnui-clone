@@ -1,4 +1,5 @@
 import { Activity, CreditCard, DollarSign, User } from "lucide-react";
+
 import {
   Card,
   CardContent,
@@ -6,7 +7,9 @@ import {
   CardTitle,
 } from "../components/ui/card";
 import { SalesLine } from "./SalesLine";
-import { SalesLineData } from "./SalesLineData";
+import { salesLineData } from "./SalesLineData";
+
+import { Chart } from "./Chart";
 
 export const DashboardContent = () => {
   return (
@@ -73,7 +76,9 @@ export const DashboardContent = () => {
           <CardHeader>
             <CardTitle>Overview</CardTitle>
           </CardHeader>
-          <CardContent className="h-64"></CardContent>
+          <CardContent>
+            <Chart />
+          </CardContent>
         </Card>
         <Card className="flex-[2]">
           <CardHeader className="flex-col items-start pb-6">
@@ -83,7 +88,7 @@ export const DashboardContent = () => {
             </p>
           </CardHeader>
           <CardContent className="space-y-4">
-            {SalesLineData.map((data, index) => (
+            {salesLineData.map((data, index) => (
               <SalesLine key={index} {...data} />
             ))}
           </CardContent>

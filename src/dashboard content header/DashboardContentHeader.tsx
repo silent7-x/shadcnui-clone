@@ -11,7 +11,7 @@ export const DashboardContentHeader = () => {
         <Select className="h-9">
           <div className="flex items-center gap-4">
             <Calendar size={20} />
-            <span className="text-sm">Mar 18, 2025 - Apr 2, 2025</span>
+            <span className="text-sm">Mar 20, 2025 - Mar 31, 2025</span>
           </div>
         </Select>
         <Button variant={"default"} size={"default"}>

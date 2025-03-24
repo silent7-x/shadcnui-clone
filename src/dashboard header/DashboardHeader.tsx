@@ -63,7 +63,7 @@ export const DashboardHeader = () => {
             />
             <p className="text-muted-foreground bg-background pointer-events-none absolute top-1/2 right-2 flex -translate-y-1/2 items-center gap-1 rounded-md px-2 py-1 text-xs max-[840px]:hidden">
               Press
-              <kbd className="bg-muted text-muted-foreground pointer-events-none inline-flex items-center gap-1 rounded border px-1.5 py-0.5 font-mono text-sm font-medium opacity-100 select-none">
+              <kbd className="bg-muted text-muted-foreground t pointer-events-none inline-flex items-center gap-1 rounded border px-1.5 py-0.5 font-mono text-sm font-medium opacity-100 select-none">
                 ⌘<span className="text-xs">K</span>
               </kbd>
             </p>
