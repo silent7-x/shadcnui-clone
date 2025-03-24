@@ -6,10 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
+import { ChartContent } from "./ChartContent";
 import { SalesLine } from "./SalesLine";
 import { salesLineData } from "./SalesLineData";
-
-import { Chart } from "./Chart";
 
 export const DashboardContent = () => {
   return (
@@ -77,7 +76,7 @@ export const DashboardContent = () => {
             <CardTitle>Overview</CardTitle>
           </CardHeader>
           <CardContent>
-            <Chart />
+            <ChartContent />
           </CardContent>
         </Card>
         <Card className="flex-[2]">

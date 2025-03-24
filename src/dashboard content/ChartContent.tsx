@@ -12,10 +12,17 @@ const chartConfig = {
   value: {
     label: "Amount",
     color: "var(--chart-3)",
+    valueFormatter: (value) => {
+      return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+        minimumFractionDigits: 0,
+      }).format(Number(value));
+    },
   },
 } satisfies ChartConfig;
 
-export const Chart = () => {
+export const ChartContent = () => {
   return (
     <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
       <BarChart accessibilityLayer data={chartData}>
