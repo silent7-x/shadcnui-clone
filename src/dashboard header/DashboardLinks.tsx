@@ -46,7 +46,7 @@ export const DashboardLinksDropdown = ({
         <DropdownMenuTrigger asChild>
           <Button
             variant="outline"
-            size={"default"}
+            size="default"
             className="dark:hover:bg-accent bg- dark:bg-input/30 flex items-center gap-2 font-light"
           >
             {active.charAt(0).toUpperCase() + active.slice(1)}
@@ -57,7 +57,6 @@ export const DashboardLinksDropdown = ({
           {["overview", "customers", "products", "settings"].map((item) => (
             <DropdownMenuItem asChild key={item}>
               <DashboardLink
-                href="#"
                 onClick={() => setActive(item)}
                 isCurrent={active === item}
               >
