@@ -61,10 +61,10 @@ export const DashboardHeader = () => {
               name="search"
               className="dark:hover:bg-accent hover:bg-accent mr-auto"
             />
-            <p className="text-muted-foreground bg-background pointer-events-none absolute top-1/2 right-2 flex -translate-y-1/2 items-center gap-1 rounded-md px-2 py-1 text-xs max-[840px]:hidden">
+            <p className="text-muted-foreground bg-background pointer-events-none absolute top-1/2 right-2 flex -translate-y-1/2 items-center gap-1 rounded-md px-2 py-1 text-[10px] max-[840px]:hidden">
               Press
-              <kbd className="bg-muted text-muted-foreground t pointer-events-none inline-flex items-center gap-1 rounded border px-1.5 py-0.5 font-mono text-sm font-medium opacity-100 select-none">
-                ⌘<span className="text-xs">K</span>
+              <kbd className="bg-muted text-muted-foreground pointer-events-none inline-flex items-center gap-1 rounded border px-1 py-[1px] font-mono text-sm font-medium opacity-100 select-none">
+                ⌘<span className="text-[10px]">K</span>
               </kbd>
             </p>
           </div>
