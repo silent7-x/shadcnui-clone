@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# 🧩 ShadCN UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_A clone of the shadcn/ui dashboard built with Vite, React, Tailwind CSS, and official shadcn/ui components._
 
-Currently, two official plugins are available:
+## 🎨 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **[React](https://reactjs.org/)** – JavaScript library for building user interfaces
+- 🧠 **[TypeScript](https://www.typescriptlang.org/)** – Typed JavaScript for better DX and maintainability
+- ⚡ **[Vite.js](https://vitejs.dev/)** – Lightning-fast frontend build tool
+- 💨 **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework
+- 🧱 **[Shadcn/ui](https://ui.shadcn.com/)** – Beautifully styled and accessible components using Radix UI + Tailwind CSS
+- 🧠 **[clsx](https://github.com/lukeed/clsx)**, **[tailwind-merge](https://github.com/dcastil/tailwind-merge)** & **[class-variance-authority](https://cva.style/)** – For flexible and optimized class composition
 
-## Expanding the ESLint configuration
+## 📸 Previews
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<p align="center">
+  <img src="preview.gif" alt="shadcn/ui clone preview GIF">
+  <br><br>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+  <img src="shadcnuiclonedark.png" alt="shadcn/ui clone static preview dark">
+  
+  <br><br>
+  <img src="shadcnuiclonelight.png" alt="shadcn/ui clone static preview light">
+</p>
+
+## 🚀 Features
+
+✅ **Theme support** – Light, dark, and system-based  
+✅ **Fully responsive** design  
+✅ **Interactive components** – Including Command+K UI  
+✅ **Clean and maintainable codebase** - Scalable and modular structure  
+✅ **Progressive integration** – Started with custom components using `clsx`, `cva`, and `twMerge`, then migrated to official `shadcn/ui` components
+
+## 🔧 Installation & Setup
+
+1️⃣ **Clone the repository**
+
+```sh
+git clone https://github.com/silent7-x/shadcnui-clone
+cd shadcnui-clone
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2️⃣ **Install dependencies**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```sh
+pnpm install
 ```
+
+3️⃣ **Run the project**
+
+```sh
+pnpm run dev
+```
+
+4️⃣ **Open in your browser**
+
+Vite will start a local server. Open **[http://localhost:5173/](http://localhost:5173/)** in your browser.
+
+## 🌟 Contributing
+
+Feel free to contribute! Fork the repo and submit a PR if you have improvements.
+
+## 📩 Contact
+
+💻 GitHub: [@silen7_x](https://github.com/silent7-x)
+
+🐦 Twitter: [@silen7_x](https://x.com/silen7_x)

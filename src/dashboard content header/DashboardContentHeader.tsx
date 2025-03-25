@@ -1,7 +1,7 @@
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar } from "lucide-react";
 import { Select } from "../components/Select";
 import { Button } from "../components/ui/button";
+import { HeaderTabs } from "./HeaderTabs";
 
 export const DashboardContentHeader = () => {
   return (
@@ -18,34 +18,7 @@ export const DashboardContentHeader = () => {
           Download
         </Button>
       </div>
-      <Tabs defaultValue="Overview" className="ml-4">
-        <TabsList>
-          <TabsTrigger
-            className="dark:data-[state=active]:bg-background dark:text-muted-foreground/60 font-light hover:cursor-pointer"
-            value="Overview"
-          >
-            Overview
-          </TabsTrigger>
-          <TabsTrigger
-            className="dark:data-[state=active]:bg-background dark:text-muted-foreground/60 font-light hover:cursor-pointer"
-            value="Analytics"
-          >
-            Analytics
-          </TabsTrigger>
-          <TabsTrigger
-            className="dark:data-[state=active]:bg-background dark:text-muted-foreground/60 font-light hover:cursor-pointer"
-            value="Reports"
-          >
-            Reports
-          </TabsTrigger>
-          <TabsTrigger
-            className="dark:data-[state=active]:bg-background dark:text-muted-foreground/60 font-light hover:cursor-pointer"
-            value="Notifications"
-          >
-            Notifications
-          </TabsTrigger>
-        </TabsList>
-      </Tabs>
+      <HeaderTabs />
     </div>
   );
 };
