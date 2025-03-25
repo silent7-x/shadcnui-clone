@@ -8,7 +8,7 @@ export const Select = ({
   return (
     <div
       className={cn(
-        "border-border hover hover:bg-muted rounded-md border px-4 py-2 shadow-sm transition hover:cursor-pointer",
+        "border-border hover:bg-muted rounded-md border px-4 py-2 shadow-sm transition hover:cursor-pointer",
         className,
       )}
     >

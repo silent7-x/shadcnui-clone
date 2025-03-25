@@ -1,4 +1,4 @@
-# 🧩 ShadCN UI Clone
+# 🧩 Shadcn/ui Clone
 
 _A clone of the shadcn/ui dashboard built with Vite, React, Tailwind CSS, and official shadcn/ui components._
 
@@ -14,11 +14,9 @@ _A clone of the shadcn/ui dashboard built with Vite, React, Tailwind CSS, and of
 ## 📸 Previews
 
 <p align="center">
-  <img src="preview.gif" alt="shadcn/ui clone preview GIF">
+  <img src="shadcnuiclone.gif" alt="shadcn/ui clone preview GIF">
   <br><br>
-
   <img src="shadcnuiclonedark.png" alt="shadcn/ui clone static preview dark">
-  
   <br><br>
   <img src="shadcnuiclonelight.png" alt="shadcn/ui clone static preview light">
 </p>
@@ -62,6 +60,6 @@ Feel free to contribute! Fork the repo and submit a PR if you have improvements.
 
 ## 📩 Contact
 
-💻 GitHub: [@silen7_x](https://github.com/silent7-x)
+💻 GitHub: [@silen7-x](https://github.com/silent7-x)
 
 🐦 Twitter: [@silen7_x](https://x.com/silen7_x)
