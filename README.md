@@ -1,4 +1,11 @@
-# 🧩 Shadcn/ui Clone
+![Vite](https://img.shields.io/badge/Vite-%23646CFF.svg?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-%2318171D.svg?style=flat&logo=radix-ui&logoColor=white)
+![📱 Responsive](https://img.shields.io/badge/%F0%9F%93%B1%20Responsive-Yes-47C272)
+
+# 🧩 Shadcn/ui Dashboard Clone
 
 _A clone of the shadcn/ui dashboard built with Vite, React, Tailwind CSS, and official shadcn/ui components._
 
